@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 📚 Exam Guidance Hub
 
 > Your Complete Guide to Government Examinations in India
