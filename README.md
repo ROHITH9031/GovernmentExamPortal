@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📚 Exam Guidance Hub
 
 > Your Complete Guide to Government Examinations in India
@@ -68,3 +69,6 @@ A comprehensive, full-stack web portal designed to help aspirants navigate and p
 ---
 
 ## 📁 Project Structure
+=======
+# GovernmentExamPortal
+>>>>>>> d021d570784ad769553f80c6d317359ff9140f73

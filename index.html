@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -361,3 +362,225 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Exam Portal - Your Guide to Success</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>📚 Exam Guidance Hub</h1>
+                <p class="tagline">Your Complete Guide to Government Examinations</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#exams" class="nav-link">Exam Posts</a></li>
+                <li><a href="#papers" class="nav-link">Question Papers</a></li>
+                <li><a href="#notifications" class="nav-link">Notifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Welcome to Government Exam Portal</h2>
+            <p>Everything you need to know about State & Central Government Examinations in one place</p>
+            <button class="cta-btn" onclick="document.getElementById('exams').scrollIntoView({behavior: 'smooth'})">
+                Explore Exams
+            </button>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-card">
+                <h3>500+</h3>
+                <p>Exam Posts</p>
+            </div>
+            <div class="stat-card">
+                <h3>1000+</h3>
+                <p>Question Papers</p>
+            </div>
+            <div class="stat-card">
+                <h3>200+</h3>
+                <p>Active Notifications</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <h3>Quick Search</h3>
+            <input type="text" id="searchInput" class="search-box" placeholder="Search exams, posts, or papers...">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" onclick="filterExams('all')">All</button>
+                <button class="filter-btn" data-filter="state" onclick="filterExams('state')">State Level</button>
+                <button class="filter-btn" data-filter="central" onclick="filterExams('central')">Central Level</button>
+            </div>
+            <div id="searchResults" class="search-results hidden"></div>
+        </div>
+    </section>
+
+    <!-- Exam Posts Section -->
+    <section id="exams" class="exams-section">
+        <div class="section-header">
+            <h2>Examination Posts</h2>
+            <p>Explore various government examination opportunities</p>
+        </div>
+        <div class="exams-container" id="examsContainer">
+            <!-- Exam cards will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Question Papers Section -->
+    <section id="papers" class="papers-section">
+        <div class="section-header">
+            <h2>Previous Question Papers</h2>
+            <p>Download and practice with previous year papers</p>
+        </div>
+        <div class="papers-filter">
+            <select id="yearFilter" class="filter-select" onchange="filterPapers()">
+                <option value="">All Years</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+            </select>
+            <select id="subjectFilter" class="filter-select" onchange="filterPapers()">
+                <option value="">All Subjects</option>
+                <option value="reasoning">Reasoning</option>
+                <option value="math">Mathematics</option>
+                <option value="english">English</option>
+                <option value="science">Science</option>
+                <option value="gs">General Studies</option>
+            </select>
+        </div>
+        <div class="papers-container" id="papersContainer">
+            <!-- Paper cards will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Notifications Section -->
+    <section id="notifications" class="notifications-section">
+        <div class="section-header">
+            <h2>Latest Notifications</h2>
+            <p>Stay updated with the latest exam notifications and deadlines</p>
+        </div>
+        <div class="notification-controls">
+            <button class="sort-btn" onclick="sortNotifications('date')">Sort by Date</button>
+            <button class="sort-btn" onclick="sortNotifications('level')">Sort by Level</button>
+        </div>
+        <div class="notifications-container" id="notificationsContainer">
+            <!-- Notification cards will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Get answers to common questions about government exams</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h4>What is the age limit for government exams?</h4>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The age limit varies for different exams. Generally, most UPSC exams require candidates to be between 21-32 years old. State level exams may have different criteria. Always check the official notification for specific requirements.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h4>How to prepare for SSC exams?</h4>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Start by understanding the exam pattern and syllabus. Practice with previous year question papers, join coaching classes or online courses, stay consistent with your studies, and practice regularly. Mock tests are essential to improve your score.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h4>What documents are required for the examination?</h4>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Generally, you need a valid photo ID (Aadhar, PAN, Passport), admit card, and documents mentioned in the official notification. Always refer to the exam notification for the exact list of required documents.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h4>How to download question papers?</h4>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Visit our Question Papers section, select the exam and year, and click the download button. Most papers are available in PDF format. You can also filter by subject and year for easy searching.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <p>Have questions? We're here to help</p>
+        </div>
+        <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <p>Government Exam Portal is dedicated to helping students and parents prepare for various government examinations.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#exams">Exams</a></li>
+                    <li><a href="#papers">Papers</a></li>
+                    <li><a href="#notifications">Notifications</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@examhub.com</p>
+                <p>Phone: +91-XXXXXXXXXX</p>
+                <p>Address: Exam Hub, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Government Exam Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> d021d570784ad769553f80c6d317359ff9140f73
